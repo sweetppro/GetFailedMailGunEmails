@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="apiField" destination="AqN-Lb-y1C" id="UL8-lh-Bi9"/>
+                <outlet property="domainField" destination="zGy-XN-ftr" id="FRs-XT-3qE"/>
+                <outlet property="emailView" destination="fO7-OP-zJF" id="uWc-5b-5Tt"/>
+                <outlet property="progressIndicator" destination="Ckd-eH-OXh" id="Zbq-N2-qIQ"/>
+                <outlet property="startButton" destination="aW9-ld-sUj" id="fZS-D8-sIV"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="windowView" destination="QvC-M9-y7g" id="ApY-RM-uk5"/>
+            </connections>
+        </customObject>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="GetFailedMailGunEmails" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="GetFailedMailGunEmails" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About GetFailedMailGunEmails" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Hide GetFailedMailGunEmails" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit GetFailedMailGunEmails" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="EyV-cy-fQs">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="g1G-vi-5xm">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="nke-74-9en">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="YKF-qn-RsN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="jFp-Ev-oWT">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="JXL-Qt-FmD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="GLs-mn-bwl"/>
+                            <menuItem title="Cut" keyEquivalent="x" id="xxt-y5-qu1">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="ZTk-mX-XPr"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="zDH-E0-9Zv">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="Oji-2w-32a"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="xEo-bl-fXe">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="CbB-d1-eDa"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="4qY-Ri-UNn">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="fmw-sX-MLC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="9FX-LV-b6l">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="7Gu-M6-NpP"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="GetFailedMailGunEmails" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="219"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="480" height="219"/>
+            <value key="maxSize" type="size" width="480" height="219"/>
+            <value key="minFullScreenContentSize" type="size" width="480" height="219"/>
+            <value key="maxFullScreenContentSize" type="size" width="480" height="219"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="219"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="OtR-yW-GF4" customClass="LightGradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="219"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T41-ZH-Dg3">
+                                <rect key="frame" x="30" y="168" width="310" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create Failed.csv from Mailgun failed logs" id="fvI-4p-91a">
+                                    <font key="font" metaFont="systemBold" size="15"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Ckd-eH-OXh">
+                                <rect key="frame" x="440" y="179" width="32" height="32"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aW9-ld-sUj" customClass="SYFlatButton">
+                                <rect key="frame" x="350" y="20" width="110" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="YUd-2R-KsD"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Get Started..." bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cqt-da-GTE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="systemBold"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="momentary" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundNormalColor">
+                                        <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundHighlightColor">
+                                        <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.70208154970000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleNormalColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleHighlightColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="start:" target="Voe-Tx-rLC" id="qml-xL-VLq"/>
+                                </connections>
+                            </button>
+                            <stackView distribution="fill" orientation="vertical" alignment="trailing" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHn-Tq-tnh">
+                                <rect key="frame" x="86" y="71" width="308" height="77"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ws8-w9-teJ">
+                                        <rect key="frame" x="1" y="55" width="307" height="22"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N5t-dc-IZ0">
+                                                <rect key="frame" x="-2" y="3" width="53" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="API Key:" id="FAE-Pz-wTS">
+                                                    <font key="font" metaFont="systemLight" size="13"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AqN-Lb-y1C">
+                                                <rect key="frame" x="57" y="0.0" width="250" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="qIa-eF-wbz"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="key-yourAPIkey" drawsBackground="YES" id="gfn-0x-Ywm">
+                                                    <font key="font" size="11" name="Menlo-Regular"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <binding destination="sbM-Kz-7Qt" name="value" keyPath="values.apiKey" id="4SX-kl-yIi"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p61-qd-7uM">
+                                        <rect key="frame" x="0.0" y="25" width="308" height="22"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lyv-1R-h5G">
+                                                <rect key="frame" x="-2" y="3" width="54" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Domain:" id="afH-3I-NZT">
+                                                    <font key="font" metaFont="systemLight" size="13"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zGy-XN-ftr">
+                                                <rect key="frame" x="58" y="0.0" width="250" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="Zb3-ol-Arm"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="yourURL.com" drawsBackground="YES" id="yfD-m1-BjN">
+                                                    <font key="font" size="11" name="Menlo-Regular"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <binding destination="sbM-Kz-7Qt" name="value" keyPath="values.domain" id="hsi-y2-AXE"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-OP-zJF" customClass="ColoredTextField">
+                                        <rect key="frame" x="186" y="0.0" width="124" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Found xxxxx emails" id="dVh-Qf-dHS">
+                                            <font key="font" size="11" name="Menlo-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="T41-ZH-Dg3" firstAttribute="leading" secondItem="OtR-yW-GF4" secondAttribute="leading" constant="32" id="2eG-Ib-Ind"/>
+                            <constraint firstItem="sHn-Tq-tnh" firstAttribute="top" secondItem="T41-ZH-Dg3" secondAttribute="bottom" constant="20" id="8Pz-DJ-ndU"/>
+                            <constraint firstItem="T41-ZH-Dg3" firstAttribute="top" secondItem="OtR-yW-GF4" secondAttribute="top" constant="32" id="Grx-Nv-fSl"/>
+                            <constraint firstItem="Ckd-eH-OXh" firstAttribute="top" secondItem="OtR-yW-GF4" secondAttribute="top" constant="8" id="NvB-oj-NiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aW9-ld-sUj" secondAttribute="trailing" constant="20" id="Vrh-fx-wZf"/>
+                            <constraint firstItem="sHn-Tq-tnh" firstAttribute="centerX" secondItem="OtR-yW-GF4" secondAttribute="centerX" id="cWH-OO-FXw"/>
+                            <constraint firstAttribute="bottom" secondItem="aW9-ld-sUj" secondAttribute="bottom" constant="20" id="hgS-NV-E72"/>
+                            <constraint firstAttribute="trailing" secondItem="Ckd-eH-OXh" secondAttribute="trailing" constant="8" id="uGW-bj-DJI"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OtR-yW-GF4" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="Jnx-kH-ykV"/>
+                    <constraint firstAttribute="bottom" secondItem="OtR-yW-GF4" secondAttribute="bottom" id="gWa-F6-RL8"/>
+                    <constraint firstAttribute="trailing" secondItem="OtR-yW-GF4" secondAttribute="trailing" id="ohx-n8-47o"/>
+                    <constraint firstItem="OtR-yW-GF4" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="rew-ju-yci"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="2bU-4G-T96"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="-177.5"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="sbM-Kz-7Qt"/>
+    </objects>
+</document>
