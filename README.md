@@ -1,5 +1,7 @@
 # GetFailedMailGunEmails
-###### Create a comma deliminated file with properties of Failed messages from the Mailgun log
+### Create a comma deliminated file with properties of Failed messages from the Mailgun log
+![GetFailedMailGunEmails: Create a comma deliminated file with properties of Failed messages from the Mailgun log in Objective-C](https://raw.githubusercontent.com/sweetppro/GetFailedMailGunEmails/assets/GetFailedMailGunEmails.png)
+
 
 Failed emails will be saved as Failed.csv in the following format:
 >  id,severity,code,message,description,firstName,lastName,email
